@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects &amp; research — Victor Hugo</title>
+  <meta name="description" content="Research notes and open-source projects by Victor Hugo: quantization, small decision models, local inference.">
+  <link rel="canonical" href="https://vhugo.dev/projects/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects &amp; research — Victor Hugo">
+  <meta property="og:description" content="Research notes and open-source projects by Victor Hugo: quantization, small decision models, local inference.">
+  <meta property="og:url" content="https://vhugo.dev/projects/">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="https://github.com/wfzyx">GitHub</a>
+    </nav>
+    <h1>Projects &amp; research</h1>
+  </header>
+
+  <main>
+    <h2>Research</h2>
+    <ul class="entries">
+      <li>
+        <h3><a href="https://github.com/wfzyx/diffusal">Quantization in diffusion vs autoregressive LMs</a></h3>
+        <p>Do masked diffusion LMs tolerate low-bit weights better than autoregressive models at matched scale? Matched pairs, thresholds set before each run, all on one 8 GB GPU. At INT4 the diffusion model degraded about half as much.</p>
+        <span class="meta">2026 · <a href="https://github.com/wfzyx/diffusal/tree/main/whitepaper">whitepaper</a></span>
+      </li>
+      <li>
+        <h3><a href="https://github.com/wfzyx/newt">Recurrent depth on a pretrained 4B model</a></h3>
+        <p>Seven attempts to retrofit a looped core onto FrogNano-4B, none better than a compute-matched LoRA. A training-free gain on HumanEval turned out to be reproduced by a noise control.</p>
+        <span class="meta">2026 · negative result</span>
+      </li>
+    </ul>
+
+    <h2>Open source</h2>
+    <ul class="entries">
+      <li>
+        <h3><a href="https://github.com/wfzyx/von">von</a></h3>
+        <p>A small encoder model that picks between options or scores them in one pass, without generating text. Runs on CPU, with Python and TypeScript SDKs.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/wfzyx/rubick">rubick</a></h3>
+        <p>Chat, embeddings and decisions served from one local model instance.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/wfzyx/vole">vole</a></h3>
+        <p>A Linux system cleaner and monitor, ported from Mole.</p>
+      </li>
+    </ul>
+
+    <h2>Products</h2>
+    <ul class="entries">
+      <li>
+        <h3><a href="https://hellow.chat">hellow</a></h3>
+        <p>Unified chat for streamers across Kick, TikTok, Twitch and YouTube. Free plan and a Pro subscription.</p>
+      </li>
+    </ul>
+
+    <h2>Work</h2>
+    <p>Backend and platform engineering in finance, aviation, public sector and ticketing: a ticketing platform with 1M+ monthly users (staff engineer, Ingresse), a regulated FX system (tech lead, Citi), and aviation communication systems. M.Sc. in Applied Computing (UFPA).</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:contact@metalgearsoftware.com">contact@metalgearsoftware.com</a></p>
+    <div class="links">
+      <a href="https://github.com/wfzyx">GitHub</a>
+      <a href="https://huggingface.co/wfzyx">Hugging Face</a>
+      <a href="https://ko-fi.com/wfzyx">Support my open-source work on Ko-fi</a>
+    </div>
+  </main>
+
+  <footer>Victor Hugo Panisa Bezerra · Brazil</footer>
+</body>
+</html>
